@@ -11,20 +11,12 @@ ActiveRecord::Base.establish_connection(
   database: "./db/test.sqlite3"
 )
 
-sql = <<-SQL
-  CREATE TABLE IF NOT EXISTS dogs (
-    id INTEGER PRIMARY KEY,
-    name TEXT
-  )
-SQL
-ActiveRecord::Base.connection.execute(sql)
+# sql = <<-SQL
+#   CREATE TABLE IF NOT EXISTS dogs (
+#     id INTEGER PRIMARY KEY,
+#     name TEXT
+#   )
+# SQL
+# ActiveRecord::Base.connection.execute(sql)
 
-# class Dog < ActiveRecord::Base
-# end
-
-
-
-
-# # Log SQL output to the terminal
-# ActiveRecord::Base.logger = Logger.new(STDOUT)
 
